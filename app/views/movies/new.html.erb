@@ -1,4 +1,7 @@
 <h1>New movie</h1>
+<% if @failure %>
+  <h3><%= @failure %></h3>
+<% end %>
 
 <%= render 'form' %>
 
